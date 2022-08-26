@@ -2089,7 +2089,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1529530278}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293017858}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VoltarAoMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1529530278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2442,7 +2454,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1711610763}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293017858}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VoltarAoJogo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1711610763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2727,7 +2751,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865272851}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293017858}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: VoltarAoMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1865272851
 MonoBehaviour:
   m_ObjectHideFlags: 0
