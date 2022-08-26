@@ -9,12 +9,16 @@ public class GerenciadorJogo : MonoBehaviour
     public bool jogoRodando;
     public GerenciadorPontos Pontos;
     float tempo;
+    public GameObject painelPause, painelGameOver, HUD;
+    public Text segundos, minutos;
 
     void Update()
     {
         if(jogoRodando)
         {
             tempo += Time.deltaTime;
+            segundos.text = Mathf.RoundToInt(tempo % 60).ToString("00");
+            minutos.text = Mathf.RoundToInt(tempo / 60).ToString("00");
         }
     }
 
@@ -22,12 +26,14 @@ public class GerenciadorJogo : MonoBehaviour
     {
         Time.timeScale = 0f;
         jogoRodando = false;
+        painelPause.SetActive(true);
     }
 
     public void VoltarAoJogo()
     {
         Time.timeScale = 1f;
         jogoRodando = true;
+        painelPause.SetActive(false);
     }
 
     public void SairDoJogo()
@@ -46,5 +52,6 @@ public class GerenciadorJogo : MonoBehaviour
         Pontos.SetRecord();
         jogoRodando = false;
         Time.timeScale = 0f;
+        painelGameOver.SetActive(true);
     }
 }

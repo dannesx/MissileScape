@@ -7,12 +7,14 @@ public class GerenciadorPontos : MonoBehaviour
 {
     public float pontos;
     public GerenciadorJogo Jogo;
+    public Text txtPontos;
 
     void Update() 
     {
         if(Jogo.jogoRodando)
         {
             pontos += Time.deltaTime;
+            txtPontos.text = Mathf.RoundToInt(pontos).ToString("0000");
         }
     }
 
